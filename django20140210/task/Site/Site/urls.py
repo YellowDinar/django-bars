@@ -14,5 +14,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
 url(r'^math/', include('math2.urls')),
+url(r'^car/', include('car.urls')),
 url(r'^admin/', include(admin.site.urls)),
 )
