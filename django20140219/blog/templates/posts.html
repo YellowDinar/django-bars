@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 align="center">List of posts</h1>
+    {% for post in posts %}
+        <p align="center">
+            <span style="font-size: 25px;"><strong><a href="/blog/posts/{{ post.id }}">{{ post.title }}</a></strong></span><br>
+            {{ post.date }}
+        </p>
+    {% endfor %}
+</body>
+</html>
